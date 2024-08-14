@@ -1,0 +1,73 @@
+.favorites-container {
+  padding: 20px;
+  max-width: 1000px; /* Reduced max-width */
+  margin: 0 auto;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap */
+}
+
+.favorite-card {
+  border: 1px solid #eee;
+  border-radius: 8px; /* Reduced border-radius */
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: calc(25% - 15px); /* Smaller width */
+  max-width: 220px; /* Reduced max-width */
+  min-width: 200px; /* Reduced min-width */
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-card img {
+  width: 100%;
+  height: 120px; /* Reduced height */
+  object-fit: cover;
+}
+
+.favorite-content {
+  padding: 8px 12px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.favorite-content h3 {
+  margin: 0;
+  font-size: 1rem; /* Reduced font-size */
+  color: #333;
+}
+
+.favorite-content p {
+  font-size: 0.8rem; /* Reduced font-size */
+  color: #666;
+  margin: 4px 0; /* Reduced margin */
+}
+
+.favorite-content button {
+  background-color: white;
+  border: 1px solid #365046;
+  color: #5C8374;
+  padding: 0.5rem 1rem; /* Reduced padding */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Reduced font-size */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.favorite-content button:hover {
+  background-color: white;
+  color: #365046;
+  transform: scale(1.1);
+}

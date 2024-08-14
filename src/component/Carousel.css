@@ -1,0 +1,67 @@
+/* Wrapper for carousel and Lottie animation */
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+/* Carousel container */
+.carousel-container {
+  flex: 2;
+  overflow: hidden;
+}
+
+/* Lottie animation container */
+.lottie-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lottie player sizing */
+.lottie-player {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Carousel images */
+.image-carousel .carousel-item img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Content inside carousel (if any) */
+.carousel-content {
+  margin-top: 20px;
+  color: #343a40;
+  text-align: center;
+}
+
+.carousel-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.carousel-content p {
+  font-size: 18px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .lottie-container {
+    margin-top: 20px;
+  }
+
+  .lottie-player {
+    max-width: 100%;
+  }
+}

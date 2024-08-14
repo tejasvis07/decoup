@@ -1,0 +1,129 @@
+.zomato-coupons-container {
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.coupon-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.zomato-coupon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.zomato-coupon-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0;
+    background-color: #bed1ca;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    width: 420px;
+    height: 280px;
+    margin: 10px; /* Adjusted margin */
+}
+
+.zomato-coupon-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.zomato-coupon-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.zomato-coupon-card .card-front,
+.zomato-coupon-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.zomato-coupon-card .card-front {
+    z-index: 2;
+}
+
+.zomato-coupon-card .card-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.zomato-coupon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zomato-coupon-content h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #444;
+}
+
+.zomato-coupon-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.zomato-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the buttons */
+    margin-top: 10px;
+}
+
+.zomato-copy-button {
+    background-color: white;
+    border: 1px solid #365046;
+    color: #5C8374;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease
+}
+
+.zomato-copy-button.copied {
+    background-color: white;
+    color: #365046;
+}
+
+.zomato-copy-button:hover {
+    background-color: white;
+    color: #365046;
+    transform: scale(1.1); 
+}
+
+.zomato-favorite-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: #f0ad4e;
+    transition: color 0.3s ease;
+}
+
+.zomato-favorite-icon.favorite {
+    color: #d9534f; /* Color for favorited icon */
+}
+
+.zomato-favorite-icon.favorite:hover {
+    color: #d9534f; /* Color when hovering over a favorited icon */
+}

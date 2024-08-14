@@ -1,0 +1,59 @@
+/* src/components/Footer.css */
+footer {
+  background-color: #183D3D;
+  padding: 2rem 1rem;
+  color: #ffffff;
+  border-top: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-info, .footer-social {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footer-info h3, .footer-social h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info p, .footer-social a {
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-info i, .footer-social i {
+  margin-right: 0.5rem;
+}
+
+.footer-info a, .footer-social a {
+  color: #93B1A6;
+  text-decoration: none;
+}
+
+.footer-info a:hover, .footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #93B1A6;
+}

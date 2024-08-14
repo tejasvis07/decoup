@@ -1,0 +1,48 @@
+/* src/component/ReviewCard.css */
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #ccc; /* Light grey for empty stars */
+    transition: color 0.3s ease;
+}
+
+.star.filled {
+    color: #ffcc00; /* Yellow color for filled stars */
+}
+
+.review-text {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.reviewer-name {
+    color: #777;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.review-card p {
+    margin: 0; /* Remove default margins to maintain padding */
+}

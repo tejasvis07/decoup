@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  height: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; 
+  margin-top: 10px; 
+}
+
+.logo {
+  height: 35px; 
+  width: 150px; 
+  transition: transform 0.3s ease; 
+  transform-origin: center; 
+}
+
+.logo:hover {
+  transform: scale(1.2); 
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #183D3D !important; 
+  text-decoration: none;
+  margin: 0 15px; 
+  padding: 5px 15px; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  font-size: 20px; 
+}
+
+.nav-link:hover {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #fff;
+  transform: scale(1.1); 
+}
+
+.active-link {
+  background-color: #777;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.profile-icon,
+.favorites-icon {
+  font-size: 24px; 
+  transition: color 0.3s ease;
+  color: #183D3D;
+}
+
+.favorites-icon {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover .favorites-icon {
+  color: #ff6f61;
+  transform: scale(1.2);
+}
+
+.search-icon {
+  font-size: 24px; 
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: none;
+  flex-direction: column;
+  padding: 5px 0; 
+  z-index: 1;
+  white-space: nowrap;
+  min-width: 100px; 
+}
+
+.nav-link:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-item {
+  color: #183D3D;
+  text-decoration: none;
+  padding: 8px 12px; 
+  font-size: 14px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.profile-dropdown .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; 
+  justify-content: space-between;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
